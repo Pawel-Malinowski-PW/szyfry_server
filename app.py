@@ -109,10 +109,3 @@ def ip_info():
         'x_forwarded_for': request.headers.get('X-Forwarded-For'),
         'x_forwarded_proto': request.headers.get('X-Forwarded-Proto')
     })
-
-
-if __name__ == '__main__':
-    # Ten blok nie będzie używany - aplikacja będzie uruchamiana przez gunicorn/uwsgi
-    # Pozostawiony tylko dla celów testowych
-    print("UWAGA: To jest serwer deweloperski. Użyj gunicorn lub uwsgi w produkcji!")
-    app.run(host='127.0.0.1', port=5000, debug=True)
