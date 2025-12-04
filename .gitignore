@@ -1,0 +1,11 @@
+venv/
+*.pyc
+__pycache__/
+*.log
+*.pid
+certs/
+logs/
+.env
+*.pem
+*.key
+*.crt
